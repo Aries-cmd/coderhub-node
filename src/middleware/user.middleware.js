@@ -23,7 +23,7 @@ const verifyUser = async (ctx, next) => {
     return ctx.app.emit('error', error, ctx)
   }
 
-  // 判断这次注册的用户名是没有被注册过的
+  
   await next()
 }
 

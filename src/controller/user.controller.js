@@ -4,9 +4,8 @@ class UserController {
     // 获取用户请求参数
     const user = ctx.request.body
     
-    // 查询数据
+    // 创建用户
     const result = await service.create(user)
-
     // 返回数据
     ctx.body = '注册成功'
   }

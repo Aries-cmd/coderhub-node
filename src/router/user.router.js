@@ -8,6 +8,6 @@ const {
 const userRouter = new Router({prefix: "/users"})
 
 // 注册接口 处理逻辑不放到这里
-userRouter.post("/", handlePassword, verifyUser, create)
+userRouter.post("/", verifyUser, handlePassword, create)
 
 module.exports = userRouter

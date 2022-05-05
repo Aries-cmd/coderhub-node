@@ -14,7 +14,7 @@ const connections = mysql.createPool({
   port: MYSQL_PORT,
   password: MYSQL_PASSWORD
 });
-
+  
 connections.getConnection((err, conn) => {
   if (err) {
     console.log("连接失败");
